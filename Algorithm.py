@@ -15,7 +15,7 @@ device_features = ""
 
 iphone_probs = iphone_probs[["Image", "Hemostasis", "Inflammation", "Proliferation"]]
 device_probs = device_probs[["Image", "Hemostasis", "Inflammation", "Proliferation"]]
-#features for both 
+#need features for both 
 
 pd.concat([iphone_probs, device_probs], axis=0)  # Concatenate DataFrames vertically
 
@@ -49,4 +49,3 @@ if __name__=="__main__":
   #get 
   device_image_link = device_probs["Image"].split("/")
   [year, month, day, hour, minute] = get_date(device_image_link)
-  
