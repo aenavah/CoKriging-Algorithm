@@ -7,3 +7,10 @@ device_path = "/Users/alexandranava/Desktop/DARPA/Exp10/Exp_10_Device/Exp10_Devi
 
 iphone_probs = pd.read_csv(iphone_path)
 device_probs = pd. read_csv(device_path)
+
+#assume device is expensive and iphone is cheap 
+
+iphone_probs = iphone_probs[["Hemostasis", "Inflammation", "Proliferation"]]
+device_probs = device_probs[["Hemostasis", "Inflammation", "Proliferation"]]
+
+pd.concat([iphone_probs, device_probs], axis=0)  # Concatenate DataFrames vertically
