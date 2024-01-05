@@ -3,6 +3,7 @@ import numpy as np
 
 
 iphone_folder = "/Users/alexandranava/Desktop/DARPA/Exp10/Exp_10_iPhone/"
+iphone_path = iphone_folder + ""
 device_path = "/Users/alexandranava/Desktop/DARPA/Exp10/Exp_10_Device/Exp10_Device_Prob.csv"
 iphone_features = ""
 
